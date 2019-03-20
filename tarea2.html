@@ -3,30 +3,19 @@
 	<title>Diferentes tipos de estilos</title>
 	<meta charset="utf-8">
 	<!--Añadir metas-->
-	<!--estilo con import-->
-	<style>
-		@import 'css/import.css';
-	</style>
-	
-	<!--stile para h2 dentro de la pagina-->
-	<style>
-		h2 {color:green;} 
-	</style>
-
 	<!--Añadiendo estilos externos, la manera buena-->
 	<link href="css/estilos.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
 	<body>
-		<h1 style="color:red">TODO ES UNA CAJA (estilo in line)</h1>
+		<h1>TODO ES UNA CAJA (estilo in line)</h1>
 			<p>Uno de los conceptos mas importantes que debemos recordar a la hora de elaborar CSS es que todos y cada uno de los elementos de mi pagina web son cajas</p>
 
 			<p>Eso exactamente, ¿que significa?. Significa que todos los elementos que representan algo en HTML tiene la sieguiente estructura visual:</p>
 
 			Con ese modelo debemos  por lo tanto distinguir la siguientes zonas: <img src="img/modelocaja.png" alt="caja HTML con sus partes, contenido, padding, border y margen" title="caja con sus partes">
 
-				<!--estilo con import-->
 				<ul>
 					<li>El contenido que es lo "importante", el texto en las etiquetas de texto, la imagen en las etiquetas de imagen etc..</li>
 					<li>El padding que es la distancia que existe entre el contenido y el borde de la caja.</li>
@@ -34,7 +23,6 @@
 					<li>El margen que es la distancia entre el elemento y el resto de lo elementos de la pagina.</li>
 				</ul>
 
-			<!--stile para h2 dentro de la pagina-->
 			<h2>Comportamineto de una caja (Estilos con la etiqueta style)</h2>
 
 				<p>Los elementos en bloque son elementos que, independientemente de la anchura que tengan, se separan verticalmente de los elementos anteriores y posteriores.</p>
