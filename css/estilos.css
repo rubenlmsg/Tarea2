@@ -1,4 +1,33 @@
+* {font-family: "Times new roman", courier new, monospace;}
+
+/**Esto es un comentario
 h4{color:pink;}
 h2{color:green;}
 li{color:blue;}
-h1{color:red;}
+h1{color:red;}**/
+#titulo {
+	background-color:grey;
+	color:white;
+	font-size: 24px;
+}
+.ejemplo{
+	background-color: blue;
+	color:white;
+}
+h2, h3{
+	border: 1px solid orange;
+}
+li{color: red;}
+li li {color: green;}
+div>a{
+	border: 5px solid green;
+}
+h2+p{
+	background-color: green;
+}
+p~h3.antes{
+	background-color: pink;
+}
+img[alt="ejemplo"]{
+	border: 5px solid grey;
+}
