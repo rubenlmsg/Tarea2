@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Diferentes tipos de selectores</title>
+	<title>Formulario</title>
 	<meta charset="utf-8">
 	<!--Añadir metas-->
 	<!--Añadiendo estilos externos, la manera buena-->
@@ -9,58 +9,94 @@
 </head>
 
 	<body>
-		<h1 id="titulo">CSS:sintaxis y selectores</h1>
-
-		<hr>
-
-		<h2>Sintaxis CSS</h2>
-
-			<p>Un conjunto de reglas CSS consta de un selector y un bloque de declaración:</p>
-
-			<img src="img/selector.gif" alt="css selector" title="css selector">
-
-			<ul>
-				<li>Los puntos selector para el elemento HTML que desea estilo.
-					<ul>
-						<li>El bloque de declaración contiene uno o más declaraciones separados por punto y coma.</li>
-						<li>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</li>
-						<li>Una declaración CSS siempre termina con un punto y coma, y ​​los bloques de declaraciones están rodeados por llaves.</li>
-					</ul>
-				</li>
-			</ul>
-
-			<p>En el siguiente ejemplo todas &lt;p&gt; elementos serán-centro alineados, con un color de texto de color rojo:</p>
 		
-		<h4 class="ejemplo">Ejemplo</h4>
-		<div>
-			<img src="img/ejemplo.gif" alt="ejemplo" title="selector p">
+		<h1>HOJA DE INSCRIPCION</h1>
+		<h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
 
-			<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1" target="blank">Intentalo tu mismo</a>
-		</div>
+			<form action="#" method="post">
+				<fieldset id="fondo1">
+					<legend>Datos Personales</legend>
 
-			<hr>
+						<table>
+							<tr>
+								<td><label for="nombre">Nombre:</label></td>
+								<td><label for="apellidos">Apellidos:</label></td>
+								<td><label for="dni">DNI</label></td>
+							</tr>
 
-			<h3 class="antes">Los selectores CSS</h3>
+							<tr>
+								<td>
+									<input type="text" name="nombre">
+								</td>
+								<td>
+									<input type="text" name="apellidos">
+								</td>
+								<td>
+									<input type="text" name="dni" maxlength="9">
+								</td>
+							</tr>
 
-				<p>Los selectores CSS se utilizan para &quot;encontrar&quot; (o seleccionar) elementos HTML en función de su nombre del elemento, ID, clase, atributo, y mucho más.</p>
+							<tr>
+								<td><label for="localidad">Localidad de Nacimineto</label></td>
+								<td><label for="provincia">Provincia:</label></td>
+								<td><label for="fecha">Fecha de Nacimiento</label></td>
+								
+							</tr>
 
-				<hr>
+							<tr>
 
-				<h3 class="despues">El selector de elementos</h3>
+								<td>
+									<input type="text" name="localidad">
+								</td>
+								<td>
+									<select id="provincia" name="provincia">
+										<option value="" selected="selected">- selecciona -</option>
+									    <option value="cantabria">Cantabria</option>
+										<option value="asturias">Asturias</option>
+										<option value="pontevedra">Pontevedra</option>
+										<option value="otro">Otro</option>
+									</select>
+								</td>
+								<td>
+									<input type="date" name="fecha">
+								</td>
+							</tr>
 
-				<p>El selector de elementos selecciona elementos basados ​​en el nombre del elemento.
+							<tr>
+								<td colspan="2"><label for="direccion">Direccion</label></td>
+								<td><label for="codigo">Codigo Postal:</label></td>	
+							</tr>
 
-				Puede seleccionar todos los elementos &lt;p&gt; en una página como esta (en este caso, todos los elementos &lt;p&gt; serán centro alineado, con un color rojo texto):</p>
+							<tr>
+								<td colspan="2"><input type="text" name="direccion" size="48"></td>
+								<td><input type="number" name="codigo" min="10000" max="99999"></td>
+							</tr>
 
-			<h4 class="ejemplo">Ejemplo</h4>
-						<div>
-						<img src="img/ejemplo.gif" alt="ejemplo" title="selector p">
+						</table>
+				</fieldset>
 
-						<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1" target="blank">Intentalo tu mismo</a>
-						</div>
-			<hr>
-			<hr>
+				<fieldset id="fondo2">
+					<legend>Forma de Acceso</legend>
+						<ul>
+							<li>
+								<input type="radio" name="directo" value="directo"/>Directo
+								<ul>
+									<li><input type="radio" name="tipo" value="bachillerato"/>Bachillerato Log Modalidad <input type="text" name="tipo"></li>
 
+									<li><input type="radio" name="tipo" value="experimental"/>Experimental</li>
+
+									<li><input type="radio" name="tipo" value="cou"/>COU Opcion <input type="text" name="tipo"></li>
+
+									<li><input type="radio" name="tipo" value="fp2"/>FP2</li
+										>
+									<li><input type="radio" name="tipo" value="otro"/>Otros (especifique)<input type="text" name="tipo"></li>
+								</ul>
+							</li>
+							<li>
+								<input type="radio" name="directo" value="prueba"/>Prueba Libre
+							</li>
+						</ul>
+				</fieldset>
 	
 	</body>
 </html>

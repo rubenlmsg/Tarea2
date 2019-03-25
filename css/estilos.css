@@ -1,11 +1,32 @@
 * {font-family: "Times new roman", courier new, monospace;}
 
+legend{
+	border-style:solid;
+	border-color:black;
+	border-width:thin;
+	border-radius: 25px;
+	background-color: white;
+}
+#fondo1{
+	background-color: lightgrey;
+	border-radius: 25px;
+}
+#fondo2{
+	background-color: navajowhite;
+	border-radius: 25px;
+}
+h1{
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
 /**Esto es un comentario
 h4{color:pink;}
 h2{color:green;}
 li{color:blue;}
 h1{color:red;}**/
-#titulo {
+/**#titulo {
 	background-color:grey;
 	color:white;
 	font-size: 24px;
@@ -30,4 +51,4 @@ p~h3.antes{
 }
 img[alt="ejemplo"]{
 	border: 5px solid grey;
-}
+}**/
