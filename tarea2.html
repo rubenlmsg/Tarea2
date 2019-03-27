@@ -2,7 +2,8 @@
 <head>
 	<title>Formulario</title>
 	<meta charset="utf-8">
-	<!--Añadir metas-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="keywords" content="diseño, css, hojas de estilos, web, html" />
 	<!--Añadiendo estilos externos, la manera buena-->
 	<link href="css/estilos.css" rel="stylesheet" type="text/css"/>
 
@@ -14,89 +15,107 @@
 		<h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
 
 			<form action="#" method="post">
-				<fieldset id="fondo1">
-					<legend>Datos Personales</legend>
+				<fieldset id="fondo1" title="primera parte del formulario con el fondo gris plata en los que se solicitan los datos personales">
+					<legend tittle="Datos Personales">Datos Personales</legend>
 
-						<table>
-							<tr>
-								<td><label for="nombre">Nombre:</label></td>
-								<td><label for="apellidos">Apellidos:</label></td>
-								<td><label for="dni">DNI</label></td>
+						<table title="comienzo de la primera tabla">
+							<tr title="primera fila de la primera tabla">
+								<td><label title="Escribe tu nombre" for="nombre">Nombre:</label></td>
+								<td><label title="escribe tus apellidos" for="apellidos">Apellidos:</label></td>
+								<td><label title="escribe tu documento nacional de identidad" for="dni">DNI</label></td>
 							</tr>
 
 							<tr>
 								<td>
-									<input type="text" name="nombre">
+									<input alt="parte para escribir tu nombre" type="text" name="nombre">
 								</td>
 								<td>
-									<input type="text" name="apellidos">
+									<input alt="parte para escribir tus apellidos" type="text" name="apellidos">
 								</td>
 								<td>
-									<input type="text" name="dni" maxlength="9">
+									<input alt="parte para escribir tu dni" type="text" name="dni" maxlength="9">
 								</td>
 							</tr>
 
 							<tr>
-								<td><label for="localidad">Localidad de Nacimineto</label></td>
-								<td><label for="provincia">Provincia:</label></td>
-								<td><label for="fecha">Fecha de Nacimiento</label></td>
+								<td><label title="tu localidad de nacimiento" for="localidad">Localidad de Nacimineto</label></td>
+								<td><label title="tu provincia" for="provincia">Provincia:</label></td>
+								<td><label title="tu fecha de nacimiento" for="fecha">Fecha de Nacimiento</label></td>
 								
 							</tr>
 
 							<tr>
 
 								<td>
-									<input type="text" name="localidad">
+									<input alt="escribe tu localidad de nacimiento" type="text" name="localidad">
 								</td>
 								<td>
-									<select id="provincia" name="provincia">
-										<option value="" selected="selected">- selecciona -</option>
-									    <option value="cantabria">Cantabria</option>
-										<option value="asturias">Asturias</option>
-										<option value="pontevedra">Pontevedra</option>
-										<option value="otro">Otro</option>
+									<select title="Selecciona tu provincia" id="provincia" name="provincia">
+										<option title="seleciona una" value="" selected="selected">- selecciona -</option>
+									    <option title="cantabria" value="cantabria">Cantabria</option>
+										<option title="asturias" value="asturias">Asturias</option>
+										<option title="pontevedra" value="pontevedra">Pontevedra</option>
+										<option title="otro" value="otro">Otro</option>
 									</select>
 								</td>
 								<td>
-									<input type="date" name="fecha">
+									<input alt="selecciona tu fecha de nacimiento" type="date" name="fecha">
 								</td>
 							</tr>
 
 							<tr>
-								<td colspan="2"><label for="direccion">Direccion</label></td>
-								<td><label for="codigo">Codigo Postal:</label></td>	
+								<td colspan="2"><label title="direccion de tu vivienda" for="direccion">Direccion</label></td>
+								<td><label title="tu codigo postal" for="codigo">Codigo Postal:</label></td>	
 							</tr>
 
 							<tr>
-								<td colspan="2"><input type="text" name="direccion" size="48"></td>
-								<td><input type="number" name="codigo" min="10000" max="99999"></td>
+								<td colspan="2"><input alt="pon tu direccion de vivienda" type="text" name="direccion" size="48"></td>
+								<td><input alt="pon tu codigo postal" type="number" name="codigo" min="10000" max="99999"></td>
 							</tr>
 
 						</table>
 				</fieldset>
 
-				<fieldset id="fondo2">
-					<legend>Forma de Acceso</legend>
+				<fieldset id="fondo2" title="segunda parte del formulario con el fondo color beig donde te piden la forma por la que has accedido">
+					<legend title="Forma de Acceso">Forma de Acceso</legend>
 						<ul>
 							<li>
-								<input type="radio" name="directo" value="directo"/>Directo
+								<input alt="forma de acceso directa" type="radio" id="direc" name="directo" value="directo"/><label for="direc">Directo</label>
 								<ul>
-									<li><input type="radio" name="tipo" value="bachillerato"/>Bachillerato Log Modalidad <input type="text" name="tipo"></li>
+									<li><input alt="de forma directa con bachillerato" type="radio" id="blm" name="tipo" value="bachillerato"/><label for="blm">Bachillerato Log Modalidad <input alt="especificar la modalidad de bachillerato" type="text" name="tipo"></label></li>
 
-									<li><input type="radio" name="tipo" value="experimental"/>Experimental</li>
+									<li><input alt="de forma directa con experimental" type="radio" id="ex" name="tipo" value="experimental"/><label for="ex">Experimental</label></li>
 
-									<li><input type="radio" name="tipo" value="cou"/>COU Opcion <input type="text" name="tipo"></li>
+									<li><input alt="de forma directa con cou" type="radio" id="couo" name="tipo" value="cou"/><label for="couo">COU Opcion <input alt="especificar la opcion de cou" type="text" name="tipo"></label></li>
 
-									<li><input type="radio" name="tipo" value="fp2"/>FP2</li
+									<li><input alt="de forma directa con fp2" type="radio" id="fp" name="tipo" value="fp2"/><label for="fp">FP2</label></li
 										>
-									<li><input type="radio" name="tipo" value="otro"/>Otros (especifique)<input type="text" name="tipo"></li>
+									<li><input alt="de forma directa de otra forma" type="radio" name="tipo" id="oe" value="otro"/><label for="oe">Otros (especifique)</label><input alt="especificar la forma" type="text" name="tipo"></li>
 								</ul>
 							</li>
 							<li>
-								<input type="radio" name="directo" value="prueba"/>Prueba Libre
+								<input alt="forma de acceso por prueba libre" type="radio" name="directo" id="pl" value="prueba"/><label for="pl">Prueba Libre</label>
 							</li>
 						</ul>
 				</fieldset>
-	
+
+				<fieldset id="fondo3" title="tercera parte del formulario de color rosa oscuro donde se pidde tus documentos personales">
+					<legend title="Documentos Adjuntos">Documentos Adjuntos</legend>
+
+						<table>
+							<tr>
+								<td><label><input alt="seleccionar si has adjuntado copia del dni" name="documentos" type="checkbox" value="dni"/>Fotocopia DNI</label></td>
+								<td><input alt="seleccionar si has adjuntado certificado académico" id="ca" type="checkbox" value="ca"/> <label for="ca">Certificado Académico</label></td>
+							</tr>
+
+							<tr>
+								<td colspan="2"><input alt="adjuntados otros documentos" name="otros" id="odo" type="checkbox" value="od"/><label for="odo"> Otros documentos (especifique)</label> &nbsp; <input alt="especifica que documentos" name="otros" type="text" size="34" /></td>
+							</tr>
+						</table>
+				</fieldset>
+				<p>
+					<input alt="boton para enviar el formulario" type="submit" name="enviar" src="https://github.com/" value="Enviar Solicitud" />
+				</p>
+		</form>
 	</body>
 </html>
