@@ -1,0 +1,36 @@
+* {font-family: "Times new roman", courier new, monospace;}
+
+.centrar{
+	text-align: center;
+}
+body{
+	background-color: grey;
+}
+#marco1{
+	
+	width: 100%;
+	border-top: 10px solid green;
+	border-bottom: 10px dashed orange;
+	background-color: blue;
+	width: 40%;	 
+}
+#marco2{
+	
+	width: 100%;
+	border-top: 10px solid green;
+	border-bottom: 10px dashed orange;
+	background-color: blue;
+	width: 40%;
+}
+#marco1, #marco2{
+	margin: 50px;
+	padding:30px;
+}
+span{
+	font-size: 0.75em;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 50px;
+	width: 40%;
+	padding: 50px 60px;
+}
