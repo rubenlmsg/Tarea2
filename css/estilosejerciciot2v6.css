@@ -1,0 +1,66 @@
+table {
+	border-collapse: collapse;
+	text-align: center;
+	font-family:sans-serif;
+}
+/*La tabla tiene el texto está centrado y la letra es sans-serif. La tabla tiene un solo borde rosa claro.*/
+td, th{
+	border: 1px solid lightpink;
+}
+/*Da color de fondo rosaclaro y un tamaño de 18 píxeles al título de la tabla.*/
+caption{
+	background-color: lightpink;
+	font-size: 18px;
+}
+/*Utilizando únicamente pseudoselectores da color de fondo rosaclaro a las casillas que contienen la descripcion del contenido de la fila y un tamaño de 18 píxeles.*/
+tbody tr th:first-child{
+	background-color: lightpink;
+	font-size: 18px;
+}
+/*Utilizando únicamente pseudoselectores da color de fondo verde claro a la celda del chip.*/
+tbody tr:nth-child(4) th:nth-child(2) {
+	background-color: lightgreen;
+}
+/*Cambiar los estado de los enlaces para que:
+ Nunca estén subrayados.
+ Si están visitados se muestren en violeta.
+ Si no están visitado se muestren en verde.*/
+a{
+	text-decoration: none;
+}
+
+a:link{
+	color: green;
+}
+a:visited{
+	color: violet;
+}
+/*Utilizando pseudoselectores haced que cuando pasemos el ratón sobre la celda que contiene el mayor valor de cada fila aumente el tamaño de letra al 80% mayor y cambie el color de fondo a gris y la letra sea verde. ¿Qué ocurre con las celdas que ya tienen color de fondo o color de letra?*/
+tr td:nth-child(7):hover,
+tr th:nth-child(2):hover,
+tr td:last-child:hover{
+	font-size: 1.8em;
+	background-color: grey;
+	color: green;
+}
+/*Utilizando Pseudoelementos Haz que la primera letra del nombre de cada móvil tenga el doble de tamaño y esté en negita.*/
+thead tr td p::first-letter{
+	font-size: 2em;
+	font-weight: bold;
+}
+/*Añade un borde verde que esté separado 10 px a los campos obligatorios.*/
+input:required{
+	border: 1px solid lightgreen;
+	padding: 10px;
+}
+/*Añade un * en rojo y como superíndice detrás de las etiquetas que acompañan a los campos del formulario.*/
+label::after{
+	color: red;
+	content: "*";
+	vertical-align: super;
+}
+/*Cambia el color de fondo del botón del formulario a verde claro y el color del texto a gris.*/
+input[type="button"]{
+	background-color: lightgreen;
+	color: grey;
+}
